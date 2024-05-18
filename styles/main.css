@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'JetBrainsMono-Medium';
+    src:  url('../fonts/JetBrainsMono-Medium.ttf') format('truetype');
+          url('../fonts/JetBrainsMono-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: JetBrainsMono-Medium ;
+    background-color: #222436;
+    /* Greyish/bluish background */
+}
+
+.container {
+    width: 80%;
+    margin: 10% auto;
+    /* Center the container vertically */
+    background-color: transparent;
+    /* Set the container background to transparent */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    max-height: 70vh;
+    /* Limit container height to 70% of viewport height */
+    padding: 0 20px;
+    /* Add padding to the sides */
+}
+
+.terminal {
+    background-color: transparent;
+    /* Set the terminal background to transparent */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    /* Remove border */
+}
+
+input[type="text"] {
+    border: none;
+    background: none;
+    width: calc(100% - 20px);
+    /* Adjust for padding */
+    font-family: inherit;
+    font-size: inherit;
+    color: white;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.output {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* Add margin bottom for spacing */
+}
+
+
+.terminal .output {
+    padding-top: 10px;
+}
